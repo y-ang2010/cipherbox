@@ -1,0 +1,67 @@
+.homeWrap {
+  height: 100%;
+  display: flex;
+
+  .homeBody {
+    width: 100%;
+  }
+
+}
+
+:global {
+  .dropButton {
+    font-size: 12px;
+    color: var(--color);
+  }
+}
+
+.tabWrap {
+  display: flex;
+  padding: 22px 0px;
+
+  & > :last-child {
+    margin-left: 25px;
+  }
+
+  .tabItem {
+    height: 26px;
+    color: white;
+    position: relative;
+    background: var(--bg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    border-radius: 13px;
+    cursor: pointer;
+
+    .tabContent {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      height: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &:before {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: var(--prefix);
+        background-size: cover;
+        z-index: 2;
+        left: 14px;
+      }
+    }
+  }
+}
+
+.listWrap {
+  .listBottom {
+    height: 58px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
